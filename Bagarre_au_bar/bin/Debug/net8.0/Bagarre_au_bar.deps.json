@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Bagarre_au_bar/1.0.0": {
+        "runtime": {
+          "Bagarre_au_bar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bagarre_au_bar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
