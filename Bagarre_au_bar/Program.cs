@@ -4,6 +4,16 @@
     {
         static void Main(string[] args)
         {
+
+            LeRenaud renaud = new LeRenaud();
+
+            int degat = renaud.Attaque();
+
+
+            //Console.WriteLine($"{renaud.Nom} - {renaud.PointsDeVie}");
+            Console.WriteLine("Hello");
+
+
             LeRenaud renaud1 = new LeRenaud();
             LeRenaud renaud2 = new LeRenaud();
 
@@ -42,7 +52,6 @@
 
             }
 
-            //Console.WriteLine("Hello");
             Console.ReadKey();
         }
     }
