@@ -47,7 +47,7 @@
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\eef47afaa4909f32f5f8b05fd93b9448e68ab9f2228dd80c226e840a7978ead9\\Bagarre_au_bar\\Program.cs",
               "ToolTip": "C:\\Users\\spasb\\AppData\\Local\\SourceServer\\eef47afaa4909f32f5f8b05fd93b9448e68ab9f2228dd80c226e840a7978ead9\\Bagarre_au_bar\\Program.cs [Lecture seule]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\eef47afaa4909f32f5f8b05fd93b9448e68ab9f2228dd80c226e840a7978ead9\\Bagarre_au_bar\\Program.cs [Lecture seule]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAQAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T12:14:12.962Z",
               "EditorCaption": " [Lecture seule]"
@@ -58,12 +58,11 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
+              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
+              "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T11:33:38.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T11:33:38.728Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Classes\\LeGerard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T10:14:44.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T10:14:44.694Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "Classes\\LeRenaud.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T10:14:16.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T10:14:16.092Z"
             }
           ]
         }
