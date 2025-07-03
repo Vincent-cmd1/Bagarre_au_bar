@@ -1,40 +1,59 @@
 ﻿using System;
 
 public abstract class Ivrogne
+{
+    public string Nom { get; }
+    public int PointsDeVie { get; set; }
+    public int NbDesAttaque { get; set; }
+    public int PointsDeVieMax { get; set; }
+    public Random random = new Random();
+
+    public Ivrogne(string nom, int pointsDeVie, int pointsDeVieMax)
     {
-        // -- PROPRIETES --
+        Nom = nom;
+        PointsDeVie = pointsDeVie;
+        PointsDeVieMax = pointsDeVieMax;
+    }
 
-        public string Nom { get; }  // Le nom de l'ivrogne.
-        public int PointsDeVie { get; set; } // Les points de vie(PV) de l'ivrogne.
-        public int NbDesAttaque { get; set; } // Le nombre de dés d’attaque.
-        public int PointsDeVieMax { get; set; } // Points de vie max
-        public Random random = new Random();
+    public abstract int Attaque();
 
-        // -- CONSTRUCTEUR --
+    public virtual void MajPdv(int degats)
+    {
+        PointsDeVie -= degats;
 
-        public Ivrogne(string nom, int pointsDeVie, int pointsDeVieMax)
+        if (PointsDeVie < 0)
+            PointsDeVie = 0;
+
+        Console.WriteLine($"{Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
+    }
+
+    public bool EstEnVie()
+    {
+        return PointsDeVie > 0;
+    }
+
+    // Afficher les status
+    public virtual void AfficherStatut()
+    {
+        Console.WriteLine($"{Nom}: {PointsDeVie}/{PointsDeVieMax} PV");
+    }
+
+    public virtual void AttaquerAdversaire(Ivrogne adversaire)
+    {
+        if (this.EstEnVie() && adversaire.EstEnVie())
         {
-            Nom = nom;
-            PointsDeVie = pointsDeVie;
-            PointsDeVieMax = pointsDeVieMax;
-        }
-
-        public abstract int Attaque();
-
-        // -- METHODE --
-
-        public virtual void MajPdv(int Attaque)
-        {
-            PointsDeVie -= Attaque;
-
-            if (PointsDeVie < 0)
-                PointsDeVie = 0;
-
-            Console.WriteLine($"{Nom} a maintenant {PointsDeVie}/{PointsDeVieMax}");
-        }
-
-        public bool EstEnVie()
-        {
-            return PointsDeVie > 0;
+            int degats = this.Attaque();
+            adversaire.MajPdv(degats);
         }
     }
+
+    public virtual void AnnoncerVictoire()
+    {
+        Console.WriteLine($"{Nom} a gagné !");
+    }
+
+    public virtual void AnnoncerDefaite()
+    {
+        Console.WriteLine($"{Nom} est K.O. !");
+    }
+}
