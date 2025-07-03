@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 
 public class LeGerard : Ivrogne
 {
@@ -18,3 +18,4 @@ public class LeGerard : Ivrogne
         return attaquebasique;
     }
 }
+

@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\",
+  "WorkspaceRootPath": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\Ivrogne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Ivrogne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Menu\\Menu0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Menu\\Menu0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,70 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LeGerard.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
-              "RelativeDocumentMoniker": "Classes\\LeGerard.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
-              "RelativeToolTip": "Classes\\LeGerard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:45:30.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
+              "ToolTip": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:41:40.114Z",
+              "WhenOpened": "2025-07-03T11:33:38.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ivrogne.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\Ivrogne.cs",
-              "RelativeDocumentMoniker": "Classes\\Ivrogne.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\Ivrogne.cs",
-              "RelativeToolTip": "Classes\\Ivrogne.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "Menu0.cs",
+              "DocumentMoniker": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Menu\\Menu0.cs",
+              "RelativeDocumentMoniker": "Menu\\Menu0.cs",
+              "ToolTip": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Menu\\Menu0.cs",
+              "RelativeToolTip": "Menu\\Menu0.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:41:03.724Z",
+              "WhenOpened": "2025-07-03T10:21:21.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LeRenaud.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs",
-              "RelativeDocumentMoniker": "Classes\\LeRenaud.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs",
-              "RelativeToolTip": "Classes\\LeRenaud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Title": "LeGerard.cs",
+              "DocumentMoniker": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
+              "RelativeDocumentMoniker": "Classes\\LeGerard.cs",
+              "ToolTip": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
+              "RelativeToolTip": "Classes\\LeGerard.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:40:13.05Z",
+              "WhenOpened": "2025-07-03T10:14:44.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LeRenaud.cs",
+              "DocumentMoniker": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs",
+              "RelativeDocumentMoniker": "Classes\\LeRenaud.cs",
+              "ToolTip": "C:\\Users\\gtavi\\OneDrive\\Documents\\01_Programmation\\dotnet-core-bootcamp\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs",
+              "RelativeToolTip": "Classes\\LeRenaud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T10:14:16.092Z",
               "EditorCaption": ""
             }
           ]
