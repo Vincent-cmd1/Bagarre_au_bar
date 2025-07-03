@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9531e6d75f77b9fa2035af7125472d613df899f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af7e1fc5e26570f0e9b2f9d832a62f01e67e5d3a")]
->>>>>>> c1d598b67d3d43343463e0ee917ea40d73f04f68
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e78ae2f1bb920cd2eabe4a5bfe1e32fa4e75b82b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
