@@ -1,26 +1,26 @@
-﻿using System;
+﻿//using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class LeGerard : Ivrogne
-{
-	public LeGerard()
-	{
+///// <summary>
+///// Summary description for Class1
+///// </summary>
+//public class LeGerard : Ivrogne
+//{
+//    public LeGerard()
+//    { }
     
-    // -- PROPRIETES --
+//    // -- PROPRIETES --
 
     
 
 
 
 
-    // -- CONSTRUCTEUR --
+//    // -- CONSTRUCTEUR --
     
-    public LeGerard(string nom, int pointsDeVie) : base(nom, pointDeVie)
-    {
-        Nom = nom;
-    }
+//    public LeGerard(string nom, int pointsDeVie) : base(nom, pointDeVie)
+//    {
+//        Nom = nom;
+//    }
 
 
 
@@ -28,7 +28,7 @@ public class LeGerard : Ivrogne
 
 
 
-    // -- METHODE --
+//    // -- METHODE --
 
-}
-}
+//}
+//}
