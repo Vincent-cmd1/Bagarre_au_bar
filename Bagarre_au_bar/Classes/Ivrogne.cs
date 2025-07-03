@@ -24,7 +24,7 @@ public abstract class Ivrogne
         if (PointsDeVie < 0)
             PointsDeVie = 0;
 
-        Console.WriteLine($"{Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
+        Console.WriteLine($"{this.Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
     }
 
     public bool EstEnVie()
@@ -32,10 +32,9 @@ public abstract class Ivrogne
         return PointsDeVie > 0;
     }
 
-    // Afficher les status
     public virtual void AfficherStatut()
     {
-        Console.WriteLine($"{Nom}: {PointsDeVie}/{PointsDeVieMax} PV");
+        Console.WriteLine($"{this.Nom}: {PointsDeVie}/{PointsDeVieMax} PV");
     }
 
     public virtual void AttaquerAdversaire(Ivrogne adversaire)
@@ -49,11 +48,57 @@ public abstract class Ivrogne
 
     public virtual void AnnoncerVictoire()
     {
-        Console.WriteLine($"{Nom} a gagné !");
+        Console.WriteLine($"{this.Nom} a gagné !");
     }
 
     public virtual void AnnoncerDefaite()
     {
-        Console.WriteLine($"{Nom} est K.O. !");
+        Console.WriteLine($"{this.Nom} est K.O. !");
+    }
+
+
+    public static void Duel(Ivrogne combattant1, Ivrogne combattant2)
+    {
+        Console.WriteLine($"=== DUEL: {combattant1.Nom} VS {combattant2.Nom} ===");
+
+        int tour = 1;
+
+        while (combattant1.EstEnVie() && combattant2.EstEnVie() && tour <= 20)
+        {
+            Console.WriteLine($"\n----- Tour {tour} -----");
+            combattant1.AfficherStatut();
+            combattant2.AfficherStatut();
+
+            Console.WriteLine();
+
+            combattant1.AttaquerAdversaire(combattant2);
+
+            Console.WriteLine();
+
+            if (combattant2.EstEnVie())
+                combattant2.AttaquerAdversaire(combattant1);
+
+            //System.Threading.Thread.Sleep(2000); // 2 secs d'attente
+
+            Console.ReadKey();
+            tour++;
+        }
+
+        Console.WriteLine("\n=== RÉSULTAT ===");
+
+        if (!combattant1.EstEnVie())
+        {
+            combattant1.AnnoncerDefaite();
+            combattant2.AnnoncerVictoire();
+        }
+        else if (!combattant2.EstEnVie())
+        {
+            combattant2.AnnoncerDefaite();
+            combattant1.AnnoncerVictoire();
+        }
+        else
+        {
+            Console.WriteLine("Match nul après 20 tours !");
+        }
     }
 }

@@ -4,40 +4,39 @@
     {
         static void Main(string[] args)
         {
-            
-            LeRenaud renaud1 = new LeRenaud();
-            LeGerard gerard1 = new LeGerard();
+            LeRenaud renaud = new LeRenaud();
+            LeGerard gerard = new LeGerard();
 
-            Console.WriteLine("=== COMBAT ===");
+            Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
+            Console.WriteLine("1. Renaud");
+            Console.WriteLine("2. Gerard");
+            Console.Write("Choisissez le premier combattant (1-2): ");
 
-            int tour = 1;
+            string choix1 = Console.ReadLine();
+            Ivrogne combattant1, combattant2;
 
-            while (renaud1.EstEnVie() && gerard1.EstEnVie() && tour <= 20)
+            if (choix1 == "1")
             {
-                Console.WriteLine($" ----- Tour {tour} ----");
-                Console.WriteLine($"{renaud1.Nom}: {renaud1.PointsDeVie}/{renaud1.PointsDeVieMax} Points de vie et {gerard1.Nom}: {gerard1.PointsDeVie}/{gerard1.PointsDeVieMax} Points de vie");
-                int degatsJ1 = renaud1.Attaque();
-                int degatsJ2 = gerard1.Attaque();
-
-                renaud1.MajPdv(degatsJ1);
-                gerard1.MajPdv(degatsJ2);
-
-                tour++;
-
-                if (!renaud1.EstEnVie()) { 
-                    Console.WriteLine($"\n{renaud1.Nom} est K.O.");
-                    Console.WriteLine($"\n{gerard1.Nom} a Gagné !.");
-                }
-                   
-
-                if (!gerard1.EstEnVie()) 
-                {
-                    Console.WriteLine($"\n{gerard1.Nom} est K.O.");
-                    Console.WriteLine($"\n{renaud1.Nom} a Gagné !.");
-                }
-                    
-
+                combattant1 = renaud;
+                Console.WriteLine("Premier combattant: Renaud");
+                Console.WriteLine("Deuxième combattant: Gerard");
+                combattant2 = gerard;
             }
+            else if (choix1 == "2")
+            {
+                combattant1 = gerard;
+                Console.WriteLine("Premier combattant: Gerard");
+                Console.WriteLine("Deuxième combattant: Renaud");
+                combattant2 = renaud;
+            }
+            else
+            {
+                Console.WriteLine("Choix invalide ! Par défaut: Renaud vs Gerard");
+                combattant1 = renaud;
+                combattant2 = gerard;
+            }
+
+            Ivrogne.Duel(combattant1, combattant2);
 
             Console.ReadKey();
         }
