@@ -17,4 +17,12 @@ public class LeRenaud : Ivrogne
 
         return attaquebasique;
     }
+
+    public override int AttaqueSpeciale()
+    {
+        int attaqueSpeciale = random.Next(15, 25);
+        Console.WriteLine($"{Nom} utilise SUPER PUNCH et inflige {attaqueSpeciale} dégâts !");
+        return attaqueSpeciale;
+    }
+
 }
