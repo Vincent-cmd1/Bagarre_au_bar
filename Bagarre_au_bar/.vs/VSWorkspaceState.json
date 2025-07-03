@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Classes"
+    "\\Classes",
+    "\\Menu"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Menu\\Menu0.cs",
   "PreviewInSolutionExplorer": false
 }
