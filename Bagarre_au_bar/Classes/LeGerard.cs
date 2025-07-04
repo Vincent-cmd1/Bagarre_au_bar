@@ -8,6 +8,7 @@ public abstract class LeGerard : Ivrogne
         Console.WriteLine("Le Gerard (base test)");
     }
 
+    // -- METHODE D'ATTAQUE BASIQUE --
     public override int Attaquer()
     {
         int attaquebasique = random.Next(2, 12);

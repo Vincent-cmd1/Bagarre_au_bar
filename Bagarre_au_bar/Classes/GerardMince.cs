@@ -4,7 +4,7 @@
     {
         Nom = "Gerard Mince";
         PointsDeVie = PointsDeVieMax = 90;
-        FrequenceAttaqueSpeciale = 2; // Tous les 2 tours
+        FrequenceAptitude = 2; // Tous les 2 tours
         Console.WriteLine("Gérard Mince entre discrètement...");
     }
 
