@@ -2,37 +2,58 @@
 
 public abstract class Ivrogne
 {
-    public string Nom { get; set; }
-    public int PointsDeVie { get; set; }
-    public int NbDesAttaque { get; set; }
-    public int PointsDeVieMax { get; set; }
-    public int FrequenceAttaqueSpeciale { get; set; } // Pour simuler les tours
-    public Random random = new Random();
+    // -- PROPRIETE -- 
+    public string Nom { get; protected set; }
 
-    public Ivrogne(string nom, int pointsDeVie, int pointsDeVieMax, int frequenceAttaqueSpeciale = 3)
+    public int PointsDeVie { get; protected set; }
+
+    /*public int NbDesAttaque { get; protected set; }*/
+    public int PointsDeVieMax { get; protected set; }
+    public int FrequenceAptitude { get; protected set; }
+
+    protected static readonly Random random = new();
+
+    // -- CONSTRUCTEUR --
+    protected Ivrogne(string nom, int pointsDeVie, int pointsDeVieMax, int frequenceAptitude)
     {
         Nom = nom;
         PointsDeVie = pointsDeVie;
         PointsDeVieMax = pointsDeVieMax;
-        FrequenceAttaqueSpeciale = frequenceAttaqueSpeciale;
+        FrequenceAptitude = frequenceAptitude;
     }
 
-    public abstract int Attaque();
+    /*public abstract int Attaque();
     public abstract int AttaqueSpeciale();
+    public abstract void AptitudeSpecial(Ivrogne cible);*/
 
-    public virtual bool PeutFaireAttaqueSpeciale(int tour) // 
+    // -- LES METHODES --
+
+    // - METHODE D'ATTAQUE NORMALE - 
+
+    public virtual int Attaquer()
     {
-        return tour % FrequenceAttaqueSpeciale == 0;
+        int degats = random.Next(5, 15);
+        Console.WriteLine($"{Nom} met une baffe et inflige {degats} dégâts !");
+        return degats;
     }
 
-    public virtual void MajPdv(int degats)
+    // - METHODE D'APTITUDE SPECIALE - 
+
+    public abstract void AptitudeSpecial(Ivrogne cible);
+
+    // - METHODE DE COMBAT : UTILITAIRES -
+
+    public void SubirDegats(int degats)
     {
         PointsDeVie -= degats;
+        if (PointsDeVie < 0) PointsDeVie = 0;
+    }
 
-        if (PointsDeVie < 0)
-            PointsDeVie = 0;
-
-        Console.WriteLine($"{this.Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
+    public void Soigner(int soin)
+    {
+        PointsDeVie += soin;
+        if (PointsDeVie > PointsDeVieMax)
+            PointsDeVie = PointsDeVieMax;
     }
 
     public bool EstEnVie()
@@ -45,7 +66,81 @@ public abstract class Ivrogne
         Console.WriteLine($"{this.Nom}: {PointsDeVie}/{PointsDeVieMax} PV");
     }
 
-    public virtual void AttaquerAdversaire(Ivrogne adversaire)
+    // DUEL : METHODE POUR GERER UN COMBAT
+
+    public static void Duel(Ivrogne a, Ivrogne b)
+    {
+        int tour = 1;
+        while (a.EstEnVie() && b.EstEnVie())
+        {
+            Console.WriteLine($"\n--- Tour {tour} ---");
+
+            // Tour du combattant A
+            if (tour % a.FrequenceAptitude == 0)
+                a.AptitudeSpecial(b);
+            else
+                b.SubirDegats(a.Attaquer());
+
+            if (!b.EstEnVie()) break;
+
+            // Tour du combattant B
+            if (tour % b.FrequenceAptitude == 0)
+                b.AptitudeSpecial(a);
+            else
+                a.SubirDegats(b.Attaquer());
+
+            // Affichage
+            a.AfficherStatut();
+            b.AfficherStatut();
+
+            tour++;
+            Console.WriteLine("Appuyez sur une touche pour continuer...");
+            Console.ReadKey();
+        }
+
+        // Fin du combat
+        Console.WriteLine("\n=== FIN DU COMBAT ===");
+        Console.WriteLine(a.EstEnVie()
+            ? $"{a.Nom} remporte la bagarre !"
+            : $"{b.Nom} remporte la bagarre !");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/*
+public virtual bool PeutFaireAttaqueSpeciale(int tour)
+{
+    return tour % FrequenceAttaqueSpeciale == 0;
+}
+
+public virtual void MajPdv(int degats)
+{
+    PointsDeVie -= degats;
+
+    if (PointsDeVie < 0)
+        PointsDeVie = 0;
+
+    Console.WriteLine($"{this.Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
+}#1#
+
+
+
+
+
+    /*public virtual void AttaquerAdversaire(Ivrogne adversaire)
     {
         if (this.EstEnVie() && adversaire.EstEnVie())
         {
@@ -71,7 +166,7 @@ public abstract class Ivrogne
     public virtual void AnnoncerDefaite()
     {
         Console.WriteLine($"{this.Nom} est K.O. !");
-    }
+    }#1#
 
     public static void Duel(Ivrogne combattant1, Ivrogne combattant2)
     {
@@ -135,3 +230,4 @@ public abstract class Ivrogne
         }
     }
 }
+*/
