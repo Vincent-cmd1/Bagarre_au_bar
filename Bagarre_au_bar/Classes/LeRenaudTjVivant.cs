@@ -1,5 +1,6 @@
 ﻿public class LeRenaudTjVivant : LeRenaud
 {
+    // -- CONSTRUCTEUR --
     public LeRenaudTjVivant()
     {
         Nom = "Renaud Toujours Vivant";
@@ -8,6 +9,7 @@
         Console.WriteLine("Renaud apparaît, toujours vivant !");
     }
 
+    // -- METHODE D'APTITUDE SPÉCIALE --
     public override void AptitudeSpecial(Ivrogne cible)
     {
         int soin = random.Next(20, 30);

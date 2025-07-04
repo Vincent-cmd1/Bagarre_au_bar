@@ -1,18 +1,16 @@
 ﻿public class JohnnyCadillac : LeJohnny
 {
-    public JohnnyCadillac() : base()
+    // -- CONSTRUCTEUR --
+    public JohnnyCadillac() : base("Johnny Cadillac", 100, 5)
     {
-        Nom = "Johnny Cadillac";
-        PointsDeVie = 100;
-        PointsDeVieMax = 100;
-        FrequenceAttaqueSpeciale = 5; // Tous les 5 tours
         Console.WriteLine("Johnny Cadillac, Maitre de la bagarre apparait !");
     }
 
-    public override int AttaqueSpeciale()
+    // -- METHODE D'APTITUDE SPÉCIALE --
+    public override void AptitudeSpecial(Ivrogne cible)
     {
-        int attaqueSpeciale = random.Next(25, 50);
-        Console.WriteLine($"{Nom} fait un HURACAN et inflige {attaqueSpeciale} dégâts !");
-        return attaqueSpeciale;
+        int degats = random.Next(25, 50);
+        cible.SubirDegats(degats);
+        Console.WriteLine($"{Nom} fait un URACAN et inflige {degats} dégâts !");
     }
 }

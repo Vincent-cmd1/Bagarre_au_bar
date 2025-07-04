@@ -21,7 +21,7 @@ namespace Bagarre_au_bar
             // // === CHOIX DU PREMIER COMBATTANT ===
             Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
             AfficherCombattants(combattants);
-            Console.Write($"Choisissez le premier combattant (1-{0}): ", combattants.Count);
+            Console.Write($"Choisissez le premier combattant (1-{combattants.Count}): ", combattants.Count);
 
             int choix1 = LireChoix(1, combattants.Count);
             Ivrogne combattant1 = combattants[choix1 - 1];
