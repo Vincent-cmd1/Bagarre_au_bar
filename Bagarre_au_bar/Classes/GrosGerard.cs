@@ -1,18 +1,17 @@
 ﻿public class GrosGerard : LeGerard
 {
-    public GrosGerard() : base()
+    public GrosGerard()
     {
-        Nom = "Gros Gerard";
-        PointsDeVie = 120;
-        PointsDeVieMax = 120;
-        FrequenceAttaqueSpeciale = 3; // Tous les 3 tours
-        Console.WriteLine("Super Gerard apparaît !");
+        Nom = "Gros Gérard";
+        PointsDeVie = PointsDeVieMax = 120;
+        FrequenceAptitude = 3;
+        Console.WriteLine("Gros Gérard arrive au bar !");
     }
 
-    public override int AttaqueSpeciale()
+    public override void AptitudeSpecial(Ivrogne cible)
     {
-        int attaqueSpeciale = random.Next(15, 25);
-        Console.WriteLine($"{Nom} utilise MEGA-BAFFE et inflige {attaqueSpeciale} dégâts !");
-        return attaqueSpeciale;
+        int degats = random.Next(20, 30);
+        cible.SubirDegats(degats);
+        Console.WriteLine($"{Nom} utilise MEGA-BAFFE ! Il inflige {degats} dégâts !");
     }
 }

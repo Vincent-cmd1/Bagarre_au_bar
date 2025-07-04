@@ -1,18 +1,17 @@
-﻿//public class LeRenaudTjVivant : LeRenaud
-//{
-//    public LeRenaudTjVivant() : base()
-//    {
-//        Nom = "Renaud Toujours Vivant";
-//        PointsDeVie = 70;
-//        PointsDeVieMax = 70;
-//        FrequenceAttaqueSpeciale = 4; // Tous les quatre tours
-//        Console.WriteLine("Renaud apparait, et il est toujours vivant !");
-//    }
+﻿public class LeRenaudTjVivant : LeRenaud
+{
+    public LeRenaudTjVivant()
+    {
+        Nom = "Renaud Toujours Vivant";
+        PointsDeVie = PointsDeVieMax = 90;
+        FrequenceAptitude = 3;
+        Console.WriteLine("Renaud apparaît, toujours vivant !");
+    }
 
-//    public override int AptitudeSpecial()
-//    {
-//        int aptitudeSpeciale = random.Next(10, 30);
-//        Console.WriteLine($"Toujours debout, toujours la banane..{Nom} est toujours vivant. Il recupère {aptitudeSpeciale} points de vie !");
-//        return aptitudeSpeciale;
-//    }
-//}
+    public override void AptitudeSpecial(Ivrogne cible)
+    {
+        int soin = random.Next(20, 30);
+        Soigner(soin);
+        Console.WriteLine($"Toujours debout, toujours la banane… {Nom} récupère {soin} PV !");
+    }
+}

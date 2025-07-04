@@ -2,17 +2,17 @@
 
 public abstract class LeJohnny : Ivrogne
 {
-    public LeJohnny() : base("", 100, 100)
+    // -- CONSTRUCTEUR --
+    public LeJohnny(string nom, int pv, int frequence) : base(nom, pv, pv, frequence)
     {
+        // Pas de message 
     }
 
-    public override int Attaque()
+    // -- METHODE D'ATTAQUE BASIQUE --
+    public override int Attaquer()
     {
-        int attaquebasique = random.Next(2, 18);
-
-        Console.WriteLine($"{Nom} a infligé {attaquebasique} dégâts");
-
-        return attaquebasique;
+        int degats = random.Next(2, 18);
+        Console.WriteLine($"{Nom} a infligé {degats} dégâts");
+        return degats;
     }
 }
-
