@@ -11,6 +11,7 @@ namespace Bagarre_au_bar
             List<Ivrogne> combattants = new List<Ivrogne>
             {
                 new LeRenaudTjVivant(),
+                new LeRenaudTeigne(),
                 new GerardMince(),
                 new GrosGerard(),
                 new JohnnyDeFeu(),
