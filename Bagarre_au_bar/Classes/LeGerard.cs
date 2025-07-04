@@ -5,7 +5,7 @@ public abstract class LeGerard : Ivrogne
     // -- CONSTRUCTEUR --
     public LeGerard() : base("Le Gerard", 100, 100, 3)
     {
-        Console.WriteLine("Le Gerard (base test)");
+        // Pas de message 
     }
 
     // -- METHODE D'ATTAQUE BASIQUE --

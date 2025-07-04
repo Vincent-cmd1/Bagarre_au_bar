@@ -1,5 +1,6 @@
 ﻿public class GrosGerard : LeGerard
 {
+    // -- CONSTRUCTEUR --
     public GrosGerard()
     {
         Nom = "Gros Gérard";
@@ -8,6 +9,7 @@
         Console.WriteLine("Gros Gérard arrive au bar !");
     }
 
+    // -- METHODE D'APTITUDE SPÉCIALE --
     public override void AptitudeSpecial(Ivrogne cible)
     {
         int degats = random.Next(20, 30);

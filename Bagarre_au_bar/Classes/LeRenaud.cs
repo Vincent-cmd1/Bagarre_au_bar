@@ -5,7 +5,7 @@ public abstract class LeRenaud : Ivrogne
     // -- CONSTRUCTEUR --
     public LeRenaud() : base("Le Renaud", 100, 100, 4) // FrequenceAptitude = tous les 4 tours
     {
-        Console.WriteLine("Le Renaud (base test)");
+        // Pas de message 
     }
 
     // -- MÉTHODE D'ATTAQUE CLASSIQUE --
