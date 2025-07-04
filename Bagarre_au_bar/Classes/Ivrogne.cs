@@ -32,7 +32,7 @@ public abstract class Ivrogne
         if (PointsDeVie < 0)
             PointsDeVie = 0;
 
-        Console.WriteLine($"{this.Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
+        Console.WriteLine($"{this.Nom} est à terre {PointsDeVie}/{PointsDeVieMax} PV");
     }
 
     public bool EstEnVie()
