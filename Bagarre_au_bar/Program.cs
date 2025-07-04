@@ -12,14 +12,15 @@ namespace Bagarre_au_bar
             {
                 new LeRenaud(),
                 new GerardMince(),
-                new GrosGerard()
+                new GrosGerard(),
+                new JohnnyDeFeu()
             };
 
             Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
             AfficherCombattants(combattants);
-            Console.Write("Choisissez le premier combattant (1-3): ");
+            Console.Write("Choisissez le premier combattant (1-4): ");
 
-            int choix1 = LireChoix(1, 3);
+            int choix1 = LireChoix(1, 4);
             Ivrogne combattant1 = combattants[choix1 - 1];
 
             List<Ivrogne> combattantsRestants = new List<Ivrogne>(combattants);
@@ -30,9 +31,9 @@ namespace Bagarre_au_bar
             Console.WriteLine("\n=== CHOIX DU DEUXIÈME COMBATTANT ===");
 
             AfficherCombattantsRestants(combattantsRestants);
-            Console.Write("Choisissez le deuxième combattant (1-2): ");
+            Console.Write("Choisissez le deuxième combattant (1-3): ");
 
-            int choix2 = LireChoix(1, 2);
+            int choix2 = LireChoix(1, 3);
             Ivrogne combattant2 = combattantsRestants[choix2 - 1];
 
             Console.WriteLine($"\nDeuxième combattant choisi: {combattant2.Nom}");

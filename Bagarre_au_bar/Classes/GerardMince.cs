@@ -5,7 +5,7 @@
         Nom = "Gerard Mince";
         PointsDeVie = 90;
         PointsDeVieMax = 90;
-        FrequenceAttaqueSpeciale = 2; // Tous les deux tours
+        FrequenceAttaqueSpeciale = 2; // Tous les 2 tours
         Console.WriteLine("Gerard Mince apparaît !");
     }
 
