@@ -22,10 +22,6 @@ public abstract class Ivrogne
         FrequenceAptitude = frequenceAptitude;
     }
 
-    /*public abstract int Attaque();
-    public abstract int AttaqueSpeciale();
-    public abstract void AptitudeSpecial(Ivrogne cible);*/
-
     // -- LES METHODES --
 
     // - METHODE D'ATTAQUE NORMALE - 
@@ -66,8 +62,104 @@ public abstract class Ivrogne
         Console.WriteLine($"{this.Nom}: {PointsDeVie}/{PointsDeVieMax} PV");
     }
 
-    // DUEL : METHODE POUR GERER UN COMBAT
+    // TOURNOI : METHODE POUR REINITIALISER LES PDV
 
+    public void Reinitialiser()
+    {
+        this.PointsDeVie = this.PointsDeVieMax;
+    }
+
+    // COMBAT AVEC RETOUR DU GAGNANT (pour le tournoi mais avec pauses)
+    public static Ivrogne Combat(Ivrogne a, Ivrogne b)
+    {
+        int tour = 1;
+        while (a.EstEnVie() && b.EstEnVie())
+        {
+            Console.WriteLine($"\n--- Tour {tour} ---");
+
+            // Tour du combattant A
+            if (tour % a.FrequenceAptitude == 0)
+                a.AptitudeSpecial(b);
+            else
+                b.SubirDegats(a.Attaquer());
+
+            if (!b.EstEnVie()) break;
+
+            // Tour du combattant B
+            if (tour % b.FrequenceAptitude == 0)
+                b.AptitudeSpecial(a);
+            else
+                a.SubirDegats(b.Attaquer());
+
+            // Affichage
+            a.AfficherStatut();
+            b.AfficherStatut();
+
+            tour++;
+            Console.WriteLine("Appuyez sur une touche pour continuer...");
+            Console.ReadKey();
+        }
+
+        // Fin du combat - RETOURNE LE GAGNANT
+        Console.WriteLine("\n=== FIN DU COMBAT ===");
+        if (a.EstEnVie())
+        {
+            Console.WriteLine($"{a.Nom} remporte la bagarre !");
+            return a;
+        }
+        else
+        {
+            Console.WriteLine($"{b.Nom} remporte la bagarre !");
+            return b;
+        }
+    }
+
+    // COMBAT RAPIDE POUR LE TOURNOI (petites pauses entre tours pouréviter la lenteur)
+    public static Ivrogne CombatRapide(Ivrogne a, Ivrogne b)
+    {
+        Console.WriteLine($"\n{a.Nom} VS {b.Nom}");
+        Console.WriteLine($"{a.Nom}: {a.PointsDeVie} PV | {b.Nom}: {b.PointsDeVie} PV"); // ✅ CORRIGÉ
+
+        int tour = 1;
+        while (a.EstEnVie() && b.EstEnVie())
+        {
+            Console.WriteLine($"\n--- TOUR {tour} ---");
+
+            // Tour du combattant A
+            if (tour % a.FrequenceAptitude == 0)
+                a.AptitudeSpecial(b);
+            else
+                b.SubirDegats(a.Attaquer());
+
+            if (!b.EstEnVie()) break;
+
+            // Tour du combattant B
+            if (tour % b.FrequenceAptitude == 0)
+                b.AptitudeSpecial(a);
+            else
+                a.SubirDegats(b.Attaquer());
+
+            // Récap des PV après le tour
+            Console.WriteLine($"PV restants: {a.Nom} ({a.PointsDeVie}) | {b.Nom} ({b.PointsDeVie})"); // ✅ CORRIGÉ
+
+            tour++;
+            System.Threading.Thread.Sleep(300);
+        }
+
+        // Retourner le gagnant
+        if (a.EstEnVie())
+        {
+            Console.WriteLine($"{a.Nom} remporte le combat !");
+            return a;
+        }
+        else
+        {
+            Console.WriteLine($"{b.Nom} remporte le combat !");
+            return b;
+        }
+    }
+
+    // DUEL : METHODE POUR GERER UN COMBAT (avec pauses)
     public static void Duel(Ivrogne a, Ivrogne b)
     {
         int tour = 1;
@@ -105,129 +197,3 @@ public abstract class Ivrogne
             : $"{b.Nom} remporte la bagarre !");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-/*
-public virtual bool PeutFaireAttaqueSpeciale(int tour)
-{
-    return tour % FrequenceAttaqueSpeciale == 0;
-}
-
-public virtual void MajPdv(int degats)
-{
-    PointsDeVie -= degats;
-
-    if (PointsDeVie < 0)
-        PointsDeVie = 0;
-
-    Console.WriteLine($"{this.Nom} a maintenant {PointsDeVie}/{PointsDeVieMax} PV");
-}#1#
-
-
-
-
-
-    /*public virtual void AttaquerAdversaire(Ivrogne adversaire)
-    {
-        if (this.EstEnVie() && adversaire.EstEnVie())
-        {
-            int degats = this.Attaque();
-            adversaire.MajPdv(degats);
-        }
-    }
-
-    public virtual void AttaqueSpecialeAdversaire(Ivrogne adversaire)
-    {
-        if (this.EstEnVie() && adversaire.EstEnVie())
-        {
-            int degats = this.AttaqueSpeciale();
-            adversaire.MajPdv(degats);
-        }
-    }
-
-    public virtual void AnnoncerVictoire()
-    {
-        Console.WriteLine($"{this.Nom} a gagné !");
-    }
-
-    public virtual void AnnoncerDefaite()
-    {
-        Console.WriteLine($"{this.Nom} est K.O. !");
-    }#1#
-
-    public static void Duel(Ivrogne combattant1, Ivrogne combattant2)
-    {
-        Console.WriteLine($"=== DUEL: {combattant1.Nom} VS {combattant2.Nom} ===");
-        Console.WriteLine($"{combattant1.Nom} utilise l'attaque spéciale tous les {combattant1.FrequenceAttaqueSpeciale} tours");
-        Console.WriteLine($"{combattant2.Nom} utilise l'attaque spéciale tous les {combattant2.FrequenceAttaqueSpeciale} tours");
-
-        int tour = 1;
-
-        while (combattant1.EstEnVie() && combattant2.EstEnVie() && tour <= 20)
-        {
-            Console.WriteLine($"\n----- Tour {tour} -----");
-            combattant1.AfficherStatut();
-            combattant2.AfficherStatut();
-
-            Console.WriteLine();
-            if (combattant1.PeutFaireAttaqueSpeciale(tour))
-            {
-                Console.WriteLine($"{combattant1.Nom} - ATTAQUE SPÉCIALE");
-                combattant1.AttaqueSpecialeAdversaire(combattant2);
-            }
-            else
-            {
-                combattant1.AttaquerAdversaire(combattant2);
-            }
-
-            Console.WriteLine();
-
-            if (combattant2.EstEnVie())
-            {
-                if (combattant2.PeutFaireAttaqueSpeciale(tour))
-                {
-                    Console.WriteLine($"{combattant2.Nom} - ATTAQUE SPÉCIALE");
-                    combattant2.AttaqueSpecialeAdversaire(combattant1);
-                }
-                else
-                {
-                    combattant2.AttaquerAdversaire(combattant1);
-                }
-            }
-
-            Console.ReadKey();
-            tour++;
-        }
-
-        Console.WriteLine("\n=== RÉSULTAT ===");
-
-        if (!combattant1.EstEnVie())
-        {
-            combattant1.AnnoncerDefaite();
-            combattant2.AnnoncerVictoire();
-        }
-        else if (!combattant2.EstEnVie())
-        {
-            combattant2.AnnoncerDefaite();
-            combattant1.AnnoncerVictoire();
-        }
-        else
-        {
-            Console.WriteLine("Match nul après 20 tours !");
-        }
-    }
-}
-*/
