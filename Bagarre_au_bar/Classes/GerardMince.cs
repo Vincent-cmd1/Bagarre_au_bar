@@ -3,16 +3,15 @@
     public GerardMince() : base()
     {
         Nom = "Gerard Mince";
-        PointsDeVie = 90;
-        PointsDeVieMax = 90;
-        FrequenceAttaqueSpeciale = 2; // Tous les 2 tours
-        Console.WriteLine("Gerard Mince apparaît !");
+        PointsDeVie = PointsDeVieMax = 90;
+        FrequenceAptitude = 2; // Tous les 2 tours
+        Console.WriteLine("Gérard Mince entre discrètement...");
     }
 
-    public override int AttaqueSpeciale()
+    public override void AptitudeSpecial(Ivrogne cible)
     {
-        int attaqueSpeciale = random.Next(12, 22);
-        Console.WriteLine($"{Nom} utilise ATTAQUE ÉCLAIR et inflige {attaqueSpeciale} dégâts !");
-        return attaqueSpeciale;
+        int degats = random.Next(12, 22);
+        cible.SubirDegats(degats);
+        Console.WriteLine($"{Nom} utilise ATTAQUE ÉCLAIR et inflige {degats} dégâts !");
     }
 }

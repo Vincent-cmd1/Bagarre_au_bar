@@ -15,6 +15,10 @@
                     MenuQuitter.AfficherQuitter();
                     break;
 
+                /*case "1":
+                    MenuQuitter.AfficherQuitter();
+                    break;*/
+
                 case "6":
                     Regles.AfficherRegles();
                     Console.ReadKey();
