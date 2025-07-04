@@ -1,14 +1,12 @@
 ﻿using System;
 
-public class LeGerard : Ivrogne
+public abstract class LeGerard : Ivrogne
 {
-    // -- CONSTRUCTEUR --
     public LeGerard() : base("Le Gerard", 100, 100)
     {
         Console.WriteLine("Le Gerard (base test)");
     }
 
-    // -- METHODE --
     public override int Attaque()
     {
         int attaquebasique = random.Next(2, 12);
@@ -17,5 +15,7 @@ public class LeGerard : Ivrogne
 
         return attaquebasique;
     }
+
+
 }
 

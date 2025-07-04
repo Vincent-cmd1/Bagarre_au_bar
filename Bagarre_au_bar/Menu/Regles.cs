@@ -1,6 +1,4 @@
-﻿namespace Menu
-{
-    public static class Regles
+﻿    public static class Regles
     {
         public static void AfficherRegles()
         {
@@ -24,4 +22,3 @@
             Console.ReadKey();
         }
     }
-}

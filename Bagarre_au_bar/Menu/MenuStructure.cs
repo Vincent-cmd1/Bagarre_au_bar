@@ -1,14 +1,11 @@
-﻿using System;
-
-public class Menu
+﻿public class MenuStructure
 {
-    public static void AfficherMenu()
+    public static void LancerMenu()
     {
         bool ProgrammeLance = true;
         while (ProgrammeLance)
         {
             MenuAffichage.AfficherMenu();
-
             string choixutilisateur = Console.ReadLine();
 
             switch (choixutilisateur)
@@ -18,26 +15,13 @@ public class Menu
                     MenuQuitter.AfficherQuitter();
                     break;
 
-                case "1":
-                    break;
-
-                case "2":
-                    break;
-
-                case "3":
-                    break;
-
-                case "4":
-                    break;
-
-                case "5":
-                    break;
-
                 case "6":
                     Regles.AfficherRegles();
                     Console.ReadKey();
                     break;
 
+                default:
+                    break;
             }
         }
     }
