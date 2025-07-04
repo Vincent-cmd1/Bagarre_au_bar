@@ -11,20 +11,28 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Ivrogne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\GrosGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\GerardMince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeRenaud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeJohnny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\LeJohnny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\JohnnyDeFeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\JohnnyDeFeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\GerardMince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\GrosGerard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,22 +64,9 @@
               "RelativeDocumentMoniker": "Classes\\Ivrogne.cs",
               "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\Ivrogne.cs",
               "RelativeToolTip": "Classes\\Ivrogne.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAjwGoAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T15:51:03.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GerardMince.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs",
-              "RelativeDocumentMoniker": "Classes\\GerardMince.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs",
-              "RelativeToolTip": "Classes\\GerardMince.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:16:43.471Z",
               "EditorCaption": ""
             },
             {
@@ -82,7 +77,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAjwCYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T14:16:50.862Z",
               "EditorCaption": ""
@@ -90,32 +85,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GrosGerard.cs",
-              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs",
-              "RelativeDocumentMoniker": "Classes\\GrosGerard.cs",
-              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs",
-              "RelativeToolTip": "Classes\\GrosGerard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T13:51:32.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "LeGerard.cs",
               "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
               "RelativeDocumentMoniker": "Classes\\LeGerard.cs",
               "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeGerard.cs",
               "RelativeToolTip": "Classes\\LeGerard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T10:14:44.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "LeRenaud.cs",
               "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeRenaud.cs",
               "RelativeDocumentMoniker": "Classes\\LeRenaud.cs",
@@ -124,6 +106,58 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T10:14:16.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeJohnny.cs",
+              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeJohnny.cs",
+              "RelativeDocumentMoniker": "Classes\\LeJohnny.cs",
+              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\LeJohnny.cs",
+              "RelativeToolTip": "Classes\\LeJohnny.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:53:32.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JohnnyDeFeu.cs",
+              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\JohnnyDeFeu.cs",
+              "RelativeDocumentMoniker": "Classes\\JohnnyDeFeu.cs",
+              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\JohnnyDeFeu.cs",
+              "RelativeToolTip": "Classes\\JohnnyDeFeu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:57:48.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GerardMince.cs",
+              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs",
+              "RelativeDocumentMoniker": "Classes\\GerardMince.cs",
+              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GerardMince.cs",
+              "RelativeToolTip": "Classes\\GerardMince.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T15:16:43.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GrosGerard.cs",
+              "DocumentMoniker": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs",
+              "RelativeDocumentMoniker": "Classes\\GrosGerard.cs",
+              "ToolTip": "C:\\Users\\spasb\\Desktop\\Boulot\\Bagarre_au_bar\\Bagarre_au_bar\\Classes\\GrosGerard.cs",
+              "RelativeToolTip": "Classes\\GrosGerard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T13:51:32.046Z",
               "EditorCaption": ""
             }
           ]
