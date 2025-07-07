@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Classes",
-    "\\Menu"
+    "\\Modals",
+    "\\Services",
+    "\\Services\\Menu"
   ],
-  "SelectedNode": "\\Classes\\LeRenaud.cs",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
