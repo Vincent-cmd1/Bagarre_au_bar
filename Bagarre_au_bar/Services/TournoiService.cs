@@ -1,6 +1,6 @@
 ﻿public static class TournoiService
 {
-    public static void LancerTournoi(/*List<Ivrogne> tousLesCombattants*/)
+    public static void LancerTournoi()
     {
         // Liste des combattants disponibles
         List<Ivrogne> combattants = CombattantsManager.ObtenirTousLesCombattants();

@@ -2,10 +2,10 @@
 {
     public static void LancerDuel()
     {
-        Console.Clear();
-
         // Liste des combattants disponibles
         List<Ivrogne> combattants = CombattantsManager.ObtenirTousLesCombattants();
+
+        Console.Clear();
 
         // === CHOIX DU PREMIER COMBATTANT ===
         Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
