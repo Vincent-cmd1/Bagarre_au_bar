@@ -4,7 +4,7 @@
 
 ## 🎭 Présentation
 
-**Bagarre au Bar** est un jeu de combat en console qui vous plonge dans l'univers déjanté des légendes françaises de comptoir. Incarnez vos icônes préférées dans des bagarres épiques où les coups de boule rivalisent avec les punchlines, et où chaque victoire se fête au son des verres qui s'entrechoquent !
+**Bagarre au Bar** est un jeu de combat en console qui vous plonge dans l'univers des légendes françaises de comptoir. Incarnez vos icônes préférées dans des bagarres épiques où les coups de boule rivalisent avec les punchlines, et où chaque victoire se fête au son des verres qui s'entrechoquent !
 
 Imaginez : Renaud face à Johnny dans un PMU à 3h du matin, Gérard qui balance du Molière entre deux gnôles... Bienvenue dans l'arène la plus alcoolisée de France ! 🇫🇷
 
