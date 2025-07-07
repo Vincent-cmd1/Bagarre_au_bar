@@ -42,6 +42,5 @@
         Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
 
         Console.WriteLine("\nAppuyez sur une touche pour retourner au menu... mais évitez de vomir sur le clavier.");
-        Console.ReadKey();
     }
 }

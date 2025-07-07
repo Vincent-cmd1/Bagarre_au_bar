@@ -47,7 +47,6 @@
             // === COMBAT ===
             Ivrogne.Duel(combattant1, combattant2);
 
-            Console.ReadKey();
         }
 
         // Affiche tous les combattants disponibles
