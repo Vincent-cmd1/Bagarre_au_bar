@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c51b45b6c668a2df28f267fab2e9697b0f3433d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41c4ce394ed5188c4bbc22242fe0957b87accd41")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bagarre_au_bar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

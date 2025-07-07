@@ -16,23 +16,31 @@
                     break;
 
                 case "1": // Le Gérard
+                    Console.Clear();
                     ListePersoLeGerard.AfficherBioLeGerard();
                     Console.ReadKey();
+                    Console.Clear();
                     break;
 
                 case "2": // Le Renaud
+                    Console.Clear();
                     ListePersoLeRenaud.AfficherBioLeRenaud();
                     Console.ReadKey();
+                    Console.Clear();
                     break;
 
                 case "3": // Le Johnny
+                    Console.Clear();
                     ListePersoLeJohnny.AfficherBioLeJohnny();
                     Console.ReadKey();
+                    Console.Clear();
                     break;
 
                 default:
+                    Console.Clear();
                     Console.WriteLine("Choix invalide. Appuyez sur une touche pour réessayer.");
                     Console.ReadKey();
+                    Console.Clear();
                     break;
             }
         }

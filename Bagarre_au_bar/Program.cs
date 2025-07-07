@@ -7,8 +7,6 @@ namespace Bagarre_au_bar
     {
         static void Main(string[] args)
         {
-
-            
             MenuStructure.AfficherMenu();
         }
     }

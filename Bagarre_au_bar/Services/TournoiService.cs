@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Bagarre_au_bar
-{
-    public static class TournoiService
+﻿    public static class TournoiService
     {
-        public static void LancerTournoi(List<Ivrogne> tousLesCombattants)
+        public static void LancerTournoi(/*List<Ivrogne> tousLesCombattants*/)
         {
+            // Liste des combattants disponibles
+            List<Ivrogne> combattants = new List<Ivrogne>
+            {
+                new LeRenaudTjVivant(),
+                new LeRenaudTeigne(),
+                new GerardMince(),
+                new GrosGerard(),
+                new JohnnyDeFeu(),
+                new JohnnyCadillac()
+            };
+
             Console.Clear();
+
             // Sélectionner 4 combattants parmi tous
-            List<Ivrogne> combattantsSelectionnes = ChoisirCombattantsTournoi(tousLesCombattants);
+            List<Ivrogne> combattantsSelectionnes = ChoisirCombattantsTournoi(combattants);
 
             Console.WriteLine("\n=== DÉBUT DU TOURNOI ===");
             Console.WriteLine($"Participants : {string.Join(", ", combattantsSelectionnes.Select(c => c.Nom))}");
@@ -92,7 +98,6 @@ namespace Bagarre_au_bar
             Console.WriteLine(new string('=', 60));
 
             Console.WriteLine("\nAppuyez sur ENTRÉE pour retourner au menu...");
-            Console.ReadLine();
         }
 
         public static List<Ivrogne> ChoisirCombattantsTournoi(List<Ivrogne> tousLesCombattants)
@@ -139,4 +144,3 @@ namespace Bagarre_au_bar
             return choix;
         }
     }
-}
