@@ -15,7 +15,14 @@
                     MenuQuitter.AfficherQuitter();
                     break;
 
-                /*case "1":
+                case "1":
+                    DuelService.LancerDuel();
+                    Console.ReadKey();
+                    break;
+
+                /*case "2":
+                    TournoiService.LancerTournoi(program.combattants);
+                    Console.ReadKey();
                     break;*/
 
                 case "4":
