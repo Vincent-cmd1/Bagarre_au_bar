@@ -1,188 +1,140 @@
-# Bagarre_au_bar
+# 🍺 BAGARRE AU BAR 🥊
 
+> *"Entre deux Ricard et un paquet de clopes, la France profonde se réveille... et ça cogne !"*
 
+## 🎭 Présentation
 
+**Bagarre au Bar** est un jeu de combat en console qui vous plonge dans l'univers déjanté des légendes françaises de comptoir. Incarnez vos icônes préférées dans des bagarres épiques où les coups de boule rivalisent avec les punchlines, et où chaque victoire se fête au son des verres qui s'entrechoquent !
 
-        Console.WriteLine("╔══════════════════════════════╗");
-        Console.WriteLine("║        BAGARRE AU BAR        ║");
-        Console.WriteLine("╠══════════════════════════════╣");
-        Console.WriteLine("║                              ║");
-        Console.WriteLine("║ 1. Lancer une bagarre        ║");
-        Console.WriteLine("║ 2. Créer un bagarreur        ║");
-        Console.WriteLine("║ 3. Supprimer un bagarreur    ║");
-        Console.WriteLine("║ 4. Afficher les bagarreurs   ║");
-        Console.WriteLine("║ 5. Afficher l'historique     ║");
-        Console.WriteLine("║ 6. Les règles                ║");
-        Console.WriteLine("║                              ║");
-        Console.WriteLine("║ 0. Quitter le jeu            ║");
-        Console.WriteLine("╚══════════════════════════════╝");
-        Console.Write("Faites votre choix (1-6) : ");
+Imaginez : Renaud face à Johnny dans un PMU à 3h du matin, Gérard qui balance du Molière entre deux gnôles... Bienvenue dans l'arène la plus alcoolisée de France ! 🇫🇷
 
+## 🎯 Objectifs du Projet
 
+- **🎮 S'amuser** : Créer un jeu fun et décalé
+- **🧠 Apprendre** : S'initier à la POO en C#
+- **🎨 Créer** : Développer un univers unique et stylisé
+- **💻 Pratiquer** : Maîtriser la console et les structures de données
 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║                                                           ║");
-        Console.WriteLine("║ Fin de soirée... les verres sont cassés, les dents aussi. ║");
-        Console.WriteLine("║ T’as survécu à l’odeur de sueur, au Ricard tiède,         ║");
-        Console.WriteLine("║ et aux punchlines de Gérard. Va te coucher, champion...   ║");
-        Console.WriteLine("║ demain, va falloir survivre à la gueule de bois...        ║");
-        Console.WriteLine("║                                                           ║");
-        Console.WriteLine("║═══════════════════════════════════════════════════════════║");
-        Console.WriteLine("║ Crédits : Cédric L. && Vincent F.,                        ║");
-        Console.WriteLine("║           sous la bienveillance d'Alexandre L.            ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════╝");
+## 🏆 Règles du Jeu
 
+1. **Deux piliers de comptoir** s'affrontent à coups de baffes et de bouteilles
+2. **Chaque tour**, un joueur attaque pendant que l'autre tente de rester debout
+3. **L'attaque** est déterminée par un lancer de dés : plus tu tires haut, plus ça cogne !
+4. **Les dégâts** font descendre les points de vie de l'adversaire
+5. **Le dernier encore debout** (ou le moins bourré) gagne le respect du comptoir !
 
+## 🚀 Installation et Utilisation
 
+1. Clonez le repository
+2. Ouvrez le projet dans votre IDE C# préféré
+3. Compilez et lancez l'application console
+4. Suivez les instructions du menu
+5. Préparez-vous à vivre la France profonde !
 
+## 📸 Aperçu du Menu
 
+```
+╔══════════════════════════════╗
+║        BAGARRE AU BAR        ║
+╠══════════════════════════════╣
+║                              ║
+║ 1. Lancer une bagarre        ║
+║ 2. Créer un bagarreur        ║
+║ 3. Supprimer un bagarreur    ║
+║ 4. Afficher les bagarreurs   ║
+║ 5. Afficher l'historique     ║
+║ 6. Les règles                ║
+║                              ║
+║ 0. Quitter le jeu            ║
+╚══════════════════════════════╝
+```
 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║                              ***   LES RENAUD   ***                                   ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║            'Chanteur de comptoir et bagarreur du dimanche,                            ║");
-        Console.WriteLine("║             Le Renaud est toujours prêt à en découdre après 2 ou 12 bières.'          ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+## 🎮 Fonctionnalités
 
-        // Renaud toujours vivant
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- RENAUD TOUJOURS VIVANT ---                                                        ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Toujours vivant, rassurez-vous. Toujours la banane, toujours debout.              ║");
-        Console.WriteLine("║    Le Renaud version 2023 n’a peut-être plus la voix, mais il a encore les poings...  ║");
-        Console.WriteLine("║    et un stock de canettes à température ambiante.'                                   ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : AUTO-SOIN ‘Toujours debout’ (10–30 PV)                       ║");
-        Console.WriteLine("║    - PV max : 90 – Fréquence aptitude : tous les 4 tours                              ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Il a vaincu la vieillesse, le showbiz, la picole… et peut-être bientôt            ║");
-        Console.WriteLine("║     son adversaire. À condition de ne pas rater sa Kro.'                              ║");                                                   
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
-    
-        // Renaud la teigne
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- RENAUD LA TEIGNE ---                                                              ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Ancien loubard, toujours vivant, toujours debout. Il a la clope au bec,           ║"); 
-        Console.WriteLine("║    la Kro à la main, et la haine dans les yeux.'                                      ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : JET DE KRO (15–25 dégâts)                                    ║");
-        Console.WriteLine("║    - Passif : Réduction de 5 dégâts subis (grâce à sa veste en cuir)                  ║");
-        Console.WriteLine("║    - PV max : 75 – Fréquence aptitude : tous les 2 tours                              ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    Il gagne souvent par abandon... de l’arbitre..                                     ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
-        Console.WriteLine("\nAppuyez sur une touche pour retourner au menu... mais évitez de vomir sur le clavier.");
-        Console.ReadKey();
+### 🏠 Menu Principal
+- **1 - Lancer une bagarre** : Sélectionnez deux combattants et place au spectacle !
+- **2 - Créer un bagarreur** : Donnez naissance à votre propre légende du comptoir
+- **3 - Supprimer un bagarreur** : Envoyez un pilier de bar à la retraite
+- **4 - Afficher les bagarreurs** : Consultez le casting complet de vos icônes
+- **5 - Afficher l'historique** : Revivez les plus belles bagarres du PMU
+- **6 - Les règles** : Apprenez l'art noble de la castagne de bistrot
+- **0 - Quitter** : Retournez à la réalité (si vous y arrivez)
 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║                          ***   LES JOHNNY   ***                                       ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║           'Ils ont le rock dans la peau, la castagne dans les veines,                 ║");
-        Console.WriteLine("║            et la légende de Johnny dans la gorge… ou ce qu’il en reste.'              ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+### ⚔️ Mécaniques de Combat
 
-        // Johnny de Feu
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- JOHNNY DE FEU ---                                                                 ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║   'C’est pas un chanteur, c’est une torche humaine.                                   ║");
-        Console.WriteLine("║    Il fume des Gitanes depuis 1972, il chante faux mais fort,                         ║");
-        Console.WriteLine("║    et il allume tout ce qui bouge.                                                    ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : ALLUME LE FEU (20–40 dégâts)                                 ║");
-        Console.WriteLine("║    - PV max : 100 – Fréquence aptitude : tous les 4 tours                             ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Il ne se bat pas, il donne un concert. Mais un concert de baffes.'                ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+#### 🥊 Système d'Attaque
+- **Attaque classique** : Dégâts aléatoires selon la force du personnage
+- **Aptitude spéciale** : Capacité unique disponible tous les X tours
+- **Taunts dynamiques** : Répliques aléatoires pour pimenter les combats
 
-        // Johnny Cadillac
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- JOHNNY CADILLAC ---                                                               ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║   'Sosie officiel accro à la castagnette.                                             ║");
-        Console.WriteLine("║    Lorqu'il était dans la marine marchande,dans chaque port,                          ║");
-        Console.WriteLine("║    Johnny Cadillac se bourrer la gueule convenablement, aller voir les p****,         ║");
-        Console.WriteLine("║    mais il était surtout là pour une chose : l’URACAN.'                               ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : URACAN (25–50 dégâts)                                        ║");
-        Console.WriteLine("║    - PV max : 100 – Fréquence aptitude : tous les 5 tours                             ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'On ne sait pas trop ce que c’est… mais ça fait mal.                               ║");
-        Console.WriteLine("║     Sa légende est floue, sa frappe est nette.'                                       ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+#### 💬 Exemples de Taunts
+- *"Casse-toi, pauv’ con !"*
+- *"T’as vu ta tête ? On dirait un vin bouchonné."*
+- *"Tu veux que je te montre l’Uraken ? T’as intérêt à tenir le choc !"*
 
-        Console.WriteLine("\nAppuyez sur une touche pour retourner au menu... mais évitez de vomir sur le clavier.");
-        Console.ReadKey();
-    }
+## 🍻 Galerie des Combattants
 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║                           ***   LES GÉRARD   ***                                      ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║  'Y'a pas à dire, Gérard, c’est pas un prénom, c’est une philosophie de comptoir.'    ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+### 🎸 **Les Renaud**
+*"Chanteur de comptoir et bagarreur du dimanche"*
 
-        // Gérard Mince 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- GÉRARD MINCE ---                                                                  ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║   'Ancien intermittent du spectacle, reconverti en buveur agile.                      ║");
-        Console.WriteLine("║    Il parle avec les mains, cite du Molière entre deux gnôles,                        ║");
-        Console.WriteLine("║    et frappe comme un serveur frustré à 2h du mat.'                                   ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : ATTAQUE ÉCLAIR (12–22 dégâts)                                ║");
-        Console.WriteLine("║    - PV max : 90 – Fréquence aptitude : tous les 2 tours                              ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Il ne tient pas l’alcool mais déteste qu’on lui dise.'                            ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+#### **Renaud la Teigne**
+- **Aptitude** : JET DE KRO (15-25 dégâts)
+- **Passif** : Armure de cuir (-5 dégâts subis)
+- **PV** : 75 | **Fréquence** : 2 tours
+- *"Ancien loubard, toujours debout, clope au bec et haine dans les yeux"*
 
-        // Gros Gérard 
-        Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-        Console.WriteLine("║ --- GROS GÉRARD ---                                                                   ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║   'C’est pas un homme, c’est un tonneau !                                             ║");
-        Console.WriteLine("║    Il sue du gras, rote du vin rouge et frappe comme un jambon'                       ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : MEGA-BAFFE (20–30 dégâts)                                    ║");
-        Console.WriteLine("║    - PV max : 120 – Fréquence aptitude : tous les 3 tours                             ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    'Il dit pas bonjour, il grogne. Il boit pas, il siphonne.                          ║");
-        Console.WriteLine("║     C’est Gérard, le colosse au foie en titane.'                                      ║");
-        Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
+#### **Renaud Toujours Vivant**
+- **Aptitude** : AUTO-SOIN "Toujours debout" (10-30 PV)
+- **PV** : 90 | **Fréquence** : 4 tours
+- *"Il a vaincu la vieillesse, le showbiz, la picole... et peut-être bientôt son adversaire"*
 
-        Console.WriteLine("\nAppuyez sur une touche pour retourner au menu... mais évitez de vomir sur le clavier.");
-        Console.ReadKey();
-    }
-            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("║                                                                                       ║");
-            Console.WriteLine("║                               RÈGLES DE BAGARRE AU BAR                                ║");
-            Console.WriteLine("║                                                                                       ║");
-            Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
-            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("║                                                                                       ║");
-            Console.WriteLine("║ - Deux piliers de comptoir s'affrontent à coups de baffes et de bouteilles.           ║");
-            Console.WriteLine("║ - Chaque tour, un joueur attaque pendant que l’autre tente de rester debout.          ║");
-            Console.WriteLine("║ - L’attaque est déterminée par un lancer de dés : plus tu tires haut, plus ça cogne ! ║");
-            Console.WriteLine("║ - Les dégâts font descendre les points de vie de l'adversaire.                        ║");
-            Console.WriteLine("║ - Le dernier encore debout (ou le moins bourré) gagne le respect du comptoir !        ║");
-            Console.WriteLine("║                                                                                       ║");
-            Console.WriteLine("║ Appuyez sur une touche pour retourner au menu... mais évitez de vomir sur le clavier. ║");
-            Console.WriteLine("║                                                                                       ║");
-            Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════╝");
-            Console.ReadKey();
-        }
-    }
+### 🎤 **Les Johnny**
+*"Le rock dans la peau, la castagne dans les veines"*
 
-        
+#### **Johnny de Feu**
+- **Aptitude** : ALLUME LE FEU (20-40 dégâts)
+- **PV** : 100 | **Fréquence** : 4 tours
+- *"Il ne se bat pas, il donne un concert. Mais un concert de baffes."*
+
+#### **Johnny Cadillac**
+- **Aptitude** : URACAN (25-50 dégâts)
+- **PV** : 100 | **Fréquence** : 5 tours
+- *"Sosie officiel accro à la castagnette. Sa légende est floue, sa frappe est nette."*
+
+### 🍷 **Les Gérard**
+*"Gérard, c'est pas un prénom, c'est une philosophie de comptoir"*
+
+#### **Gérard Mince**
+- **Aptitude** : ATTAQUE ÉCLAIR (12-22 dégâts)
+- **PV** : 90 | **Fréquence** : 2 tours
+- *"Ancien intermittent du spectacle, cite du Molière entre deux gnôles"*
+
+#### **Gros Gérard**
+- **Aptitude** : MEGA-BAFFE (20-30 dégâts)
+- **PV** : 120 | **Fréquence** : 3 tours
+- *"C'est pas un homme, c'est un tonneau ! Il sue du gras, rote du vin rouge"*
+
+## 🛠️ Technologies
+
+- **Langage** : C# .NET (Console Application)
+- **Architecture** : Programmation Orientée Objet
+- **Concepts utilisés** :
+  - Héritage de classes
+  - Polymorphisme
+  - Gestion de collections dynamiques
+  - Générateurs aléatoires pour les taunts
+  - Système de tours et cooldowns
+
+## 👨‍💻 Crédits
+
+**Développé par :**
+- **Cédric L.** & **Vincent F.**
+- *Sous la bienveillance d'Alexandre L.*
+
+---
+
+*"Fin de soirée... les verres sont cassés, les dents aussi. T'as survécu à l'odeur de sueur, au Ricard tiède, et aux punchlines de Gérard. Va te coucher, champion... demain, va falloir survivre à la gueule de bois..."*
+
+---
+
+⭐ **N'hésitez pas à laisser une étoile si ce projet vous a fait sourire !** ⭐
