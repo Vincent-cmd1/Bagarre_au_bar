@@ -7,6 +7,9 @@ namespace Bagarre_au_bar
     {
         static void Main(string[] args)
         {
+
+            MenuStructure.AfficherMenu();
+
             // Liste des combattants disponibles
             List<Ivrogne> combattants = new List<Ivrogne>
             {
