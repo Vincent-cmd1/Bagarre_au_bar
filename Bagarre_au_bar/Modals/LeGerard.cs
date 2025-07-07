@@ -11,6 +11,7 @@ public abstract class LeGerard : Ivrogne
     // -- METHODE D'ATTAQUE BASIQUE --
     public override int Attaquer()
     {
+        TenterTaunt(TauntsAttaque);
         int attaquebasique = random.Next(2, 12);
         Console.WriteLine($"{Nom} a infligé {attaquebasique} dégâts");
         return attaquebasique;

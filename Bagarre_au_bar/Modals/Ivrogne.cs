@@ -6,12 +6,15 @@ public abstract class Ivrogne
     public string Nom { get; protected set; }
 
     public int PointsDeVie { get; protected set; }
-
-    /*public int NbDesAttaque { get; protected set; }*/
     public int PointsDeVieMax { get; protected set; }
     public int FrequenceAptitude { get; protected set; }
 
     protected static readonly Random random = new();
+
+    // Liste des taunts
+    public List<string> TauntsAttaque = new(); 
+    public List<string> TauntsDefense = new();
+    public double ProbaTaunt = 0.4; // 40% de chance de lancer un taunt
 
     // -- CONSTRUCTEUR --
     protected Ivrogne(string nom, int pointsDeVie, int pointsDeVieMax, int frequenceAptitude)
@@ -28,6 +31,7 @@ public abstract class Ivrogne
 
     public virtual int Attaquer()
     {
+        TenterTaunt(TauntsAttaque);
         int degats = random.Next(5, 15);
         Console.WriteLine($"{Nom} met une baffe et inflige {degats} dégâts !");
         return degats;
@@ -37,12 +41,26 @@ public abstract class Ivrogne
 
     public abstract void AptitudeSpecial(Ivrogne cible);
 
+    // - METHODE DES TAUNTS
+
+    public void TenterTaunt(List<string> liste)
+    {
+        if (liste.Count == 0 || random.NextDouble() >= ProbaTaunt)
+            return;
+
+        string phrase = liste[random.Next(liste.Count)];
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"{Nom} : \"{phrase}\"");
+        Console.ResetColor();
+    }
+
     // - METHODE DE COMBAT : UTILITAIRES -
 
     public virtual void SubirDegats(int degats)
     {
         PointsDeVie -= degats;
         if (PointsDeVie < 0) PointsDeVie = 0;
+        TenterTaunt(TauntsDefense);
     }
 
     public void Soigner(int soin)

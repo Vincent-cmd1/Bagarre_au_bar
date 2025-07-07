@@ -36,7 +36,7 @@
         Console.WriteLine("║    Johnny Cadillac se bourrer la gueule convenablement, aller voir les p****,         ║");
         Console.WriteLine("║    mais il était surtout là pour une chose : l’URACAN.'                               ║");
         Console.WriteLine("║                                                                                       ║");
-        Console.WriteLine("║    - Aptitude spéciale : URACAN (25–50 dégâts)                                        ║");
+        Console.WriteLine("║    - Aptitude spéciale : URAKEN (25–50 dégâts)                                        ║");
         Console.WriteLine("║    - PV max : 100 – Fréquence aptitude : tous les 5 tours                             ║");
         Console.WriteLine("║                                                                                       ║");
         Console.WriteLine("║    'On ne sait pas trop ce que c’est… mais ça fait mal.                               ║");
