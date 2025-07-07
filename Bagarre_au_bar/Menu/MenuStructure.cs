@@ -16,8 +16,12 @@
                     break;
 
                 /*case "1":
-                    MenuQuitter.AfficherQuitter();
                     break;*/
+
+                case "4":
+                    ListeMenuStructure.AfficherListePersonnages();
+                    Console.ReadKey();
+                    break;
 
                 case "6":
                     Regles.AfficherRegles();
@@ -25,6 +29,8 @@
                     break;
 
                 default:
+                    Console.WriteLine("Choix invalide. Appuyez sur une touche pour réessayer.");
+                    Console.ReadKey();
                     break;
             }
         }
