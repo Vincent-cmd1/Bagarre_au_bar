@@ -14,5 +14,6 @@
         Console.WriteLine("║ Crédits : Cédric L. && Vincent F.,                        ║");
         Console.WriteLine("║           sous la bienveillance d'Alexandre L.            ║");
         Console.WriteLine("╚═══════════════════════════════════════════════════════════╝");
+        Console.ReadKey();
     }
 }

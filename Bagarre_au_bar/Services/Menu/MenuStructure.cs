@@ -14,6 +14,7 @@
                     Console.Clear();
                     ProgrammeLance = false;
                     MenuQuitter.AfficherQuitter();
+                    Console.Readkey();
                     break;
 
                 case "1":
