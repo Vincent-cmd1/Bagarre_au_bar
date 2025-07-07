@@ -8,7 +8,8 @@ namespace Bagarre_au_bar
         static void Main(string[] args)
         {
 
-            MenuStructure.AfficherMenu();
+            //MenuStructure.AfficherMenu();
+            
 
             // Liste des combattants disponibles
             List<Ivrogne> combattants = new List<Ivrogne>
@@ -21,6 +22,7 @@ namespace Bagarre_au_bar
                 new JohnnyCadillac()
             };
 
+            TournoiService.LancerTournoi(combattants);
 
             // // === CHOIX DU PREMIER COMBATTANT ===
             Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
