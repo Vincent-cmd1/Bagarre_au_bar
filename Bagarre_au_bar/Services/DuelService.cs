@@ -1,25 +1,16 @@
-﻿
-    public static class DuelService
+﻿public static class DuelService
+{
+    public static void LancerDuel()
     {
-        public static void LancerDuel()
-        {
-            Console.Clear();
+        // Liste des combattants disponibles
+        List<Ivrogne> combattants = CombattantsManager.ObtenirTousLesCombattants();
 
-            // Liste des combattants disponibles
-            List<Ivrogne> combattants = new List<Ivrogne>
-            {
-                new LeRenaudTjVivant(),
-                new LeRenaudTeigne(),
-                new GerardMince(),
-                new GrosGerard(),
-                new JohnnyDeFeu(),
-                new JohnnyCadillac()
-            };
-            
-            // // === CHOIX DU PREMIER COMBATTANT ===
-            Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
-            AfficherCombattants(combattants);
-            Console.Write($"Choisissez le premier combattant (1-{combattants.Count}): ", combattants.Count);
+        Console.Clear();
+
+        // === CHOIX DU PREMIER COMBATTANT ===
+        Console.WriteLine("=== CHOIX DU PREMIER COMBATTANT ===");
+        AfficherCombattants(combattants);
+        Console.Write($"Choisissez le premier combattant (1-{combattants.Count}): ", combattants.Count);
 
             int choix1 = LireChoix(1, combattants.Count);
             Ivrogne combattant1 = combattants[choix1 - 1];

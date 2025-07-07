@@ -1,17 +1,9 @@
-﻿    public static class TournoiService
+﻿public static class TournoiService
+{
+    public static void LancerTournoi()
     {
-        public static void LancerTournoi(/*List<Ivrogne> tousLesCombattants*/)
-        {
-            // Liste des combattants disponibles
-            List<Ivrogne> combattants = new List<Ivrogne>
-            {
-                new LeRenaudTjVivant(),
-                new LeRenaudTeigne(),
-                new GerardMince(),
-                new GrosGerard(),
-                new JohnnyDeFeu(),
-                new JohnnyCadillac()
-            };
+        // Liste des combattants disponibles
+        List<Ivrogne> combattants = CombattantsManager.ObtenirTousLesCombattants();
 
             Console.Clear();
 
