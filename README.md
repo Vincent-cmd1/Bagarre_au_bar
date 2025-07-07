@@ -34,27 +34,28 @@ Imaginez : Renaud face à Johnny dans un PMU à 3h du matin, Gérard qui balance
 ## 📸 Aperçu du Menu
 
 ```
-╔══════════════════════════════╗
-║        BAGARRE AU BAR        ║
-╠══════════════════════════════╣
-║                              ║
-║ 1. Lancer une bagarre        ║
-║ 2. Créer un bagarreur        ║
-║ 3. Supprimer un bagarreur    ║
-║ 4. Afficher les bagarreurs   ║
-║ 5. Afficher l'historique     ║
-║ 6. Les règles                ║
-║                              ║
-║ 0. Quitter le jeu            ║
-╚══════════════════════════════╝
+╔════════════════════════════════╗
+║        BAGARRE AU BAR          ║
+╠════════════════════════════════╣
+║                                ║
+║ 1. Lancer une bagarre          ║
+║ 2. Lancer une bagarre générale ║
+║ 3. Ajouter un bagarreur        ║
+║ 4. Afficher les bagarreurs     ║
+║ 5. Afficher l'historique       ║
+║ 6. Les règles                  ║
+║                                ║
+║ 0. Quitter le jeu              ║
+╚════════════════════════════════╝
+Faites votre choix (1-6) :
 ```
 
 ## 🎮 Fonctionnalités
 
 ### 🏠 Menu Principal
 - **1 - Lancer une bagarre** : Sélectionnez deux combattants et place au spectacle !
-- **2 - Créer un bagarreur** : Donnez naissance à votre propre légende du comptoir
-- **3 - Supprimer un bagarreur** : Envoyez un pilier de bar à la retraite
+- **2 - Lancer une bagarre générale** : Chaos total ! Tous les bagarreurs s'affrontent dans un battle royal épique
+- **3 - Créer un bagarreur** : Donnez naissance à votre propre légende du comptoir
 - **4 - Afficher les bagarreurs** : Consultez le casting complet de vos icônes
 - **5 - Afficher l'historique** : Revivez les plus belles bagarres du PMU
 - **6 - Les règles** : Apprenez l'art noble de la castagne de bistrot
