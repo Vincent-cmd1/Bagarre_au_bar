@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Classes",
-    "\\Menu"
+    "\\Modals",
+    "\\Services",
+    "\\Services\\Menu"
   ],
   "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
